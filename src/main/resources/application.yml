@@ -1,0 +1,15 @@
+#spring.datasource.url=jdbc:mysql://localhost:3306/songdo
+#spring.datasource.username=root
+#spring.datasource.password="@akdldptmzbdpf"
+#spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
+#
+#spring.messages.basename=message.messages
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/songdo
+    username: root
+    password: "@akdldptmzbdpf"
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  messages:
+    basename: message/messages

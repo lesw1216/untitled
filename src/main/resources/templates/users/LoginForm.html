@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+    <link th:href="@{/css/bootstrap.min.css}"
+            href="../css/bootstrap.min.css" rel="stylesheet">
+    <script th:src="@{/js/bootstrap.bundle.min.js}"
+            src="../js/bootstrap.bundle.min.js"></script>
+    <title>로그인</title>
+</head>
+<body>
+    <div class="login d-flex flex-column container-md">
+        <div>
+            <p class="text-center fs-1">LOGIN</p>
+            <form th:action="@{/login}" method="post">
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" name="username" id="username" placeholder="username">
+                    <label for="username">아이디</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="password" class="form-control" name="password" id="password" placeholder="password">
+                    <label for="password">비밀 번호</label>
+                </div>
+                <div class="d-grid gap-2 mb-3">
+                    <button class="btn btn-primary btn-lg" type="submit" th:text="#{button.login}">로그인</button>
+                </div>
+            </form>
+
+            <div class="bottom d-flex flex-row">
+                <a href="./findIdForm.html" th:href="@{/users/id}">
+                    <p class="text-center border-end border-3 pe-3" >아이디 찾기</p></a>
+                <a href="./findPasswordForm.html" th:href="@{users/password}">
+                    <p class="text-center border-end border-3 pe-3 ps-3" >비밀 번호 찾기</p></a>
+                <a href="./SignUpForm.html" th:href="@{/sign-up}">
+                    <p class="text-center ps-3" >회원 가입</p></a>
+            </div>
+        </div>
+    </div>
+
+</body>
+<style>
+    .login {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+    }
+
+    .bottom {
+        color: gray;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    a:link {
+        color: gray;
+    }
+
+    a:visited {
+        color: gray;
+    }
+
+    a:hover {
+        color: gray;
+    }
+</style>
+</html>
