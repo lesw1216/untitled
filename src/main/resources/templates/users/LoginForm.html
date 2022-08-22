@@ -11,7 +11,7 @@
 <body>
     <div class="login d-flex flex-column container-md">
         <div>
-            <p class="text-center fs-1">LOGIN</p>
+            <p class="text-center fs-1" th:text="#{title.login}">LOGIN</p>
             <form th:action="@{/login}" method="post">
                 <div class="form-floating mb-3">
                     <input type="text" class="form-control" name="username" id="username" placeholder="username">

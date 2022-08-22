@@ -13,3 +13,6 @@ spring:
 
   messages:
     basename: message/messages
+
+  thymeleaf:
+    cache: false

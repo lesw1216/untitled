@@ -11,7 +11,7 @@
 <body>
     <div class="sign-up d-flex flex-column">
         <div>
-            <p class="text-center fs-1">Sign UP</p>
+            <p class="text-center fs-1" th:text="#{title.signup}">Sign UP</p>
             <form th:action="@{/users}" th:object="${user}" method="post">
                 <div class="form-floating mb-3">
                     <input type="text" class="form-control" id="username" th:field="*{username}" placeholder="id">
